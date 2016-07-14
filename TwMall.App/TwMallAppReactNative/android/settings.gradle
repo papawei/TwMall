@@ -1,0 +1,3 @@
+rootProject.name = 'TwMallAppReactNative'
+
+include ':app'

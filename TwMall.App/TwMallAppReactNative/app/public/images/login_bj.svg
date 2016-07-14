@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="500" height="500" version="1.1" xmlns="http://www.w3.org/2000/svg">
+<defs>
+	<linearGradient id="login_bj" gradientUnits="userSpaceOnUse" x1="295.5278" y1="367.0141" x2="138.4722" y2="94.9859">
+	<stop  offset="0" style="stop-color:#6DABF1"/>
+	<stop  offset="1" style="stop-color:#7D77E5"/>
+</linearGradient>
+</defs>
+<rect width="100%" height="100%" style="fill:url(#login_bj)"/>
+</svg>
