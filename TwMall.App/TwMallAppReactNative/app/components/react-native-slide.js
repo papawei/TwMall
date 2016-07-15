@@ -11,8 +11,6 @@ import {
     ViewPagerAndroid
 } from 'react-native';
 
-
-
 let {width, height} = Dimensions.get('window');
 
 export default class Slide extends React.Component {
@@ -80,16 +78,17 @@ export default class Slide extends React.Component {
             else {
                 paginationStyle = [styles.pagination, this.state.paginationStyle]
             }
-            paginations.push(
-                React.createElement(
-                    React.View,
-                    {
-                        key: i,
-                        style: paginationStyle
-                    },
-                    null
-                )
-            );
+			/*paginations.push(
+				React.createElement(
+					'View',
+					{
+						key: i,
+						style: paginationStyle
+					},
+					null
+				)
+			);*/
+            paginations.push(<View key={i} style={paginationStyle}></View>);
         }
         return paginations;
     }
@@ -197,12 +196,13 @@ render(){
     }
     let state = this.state;
     //pagination
-    let paginationView = state.showPagination ?
+    /*let paginationView = state.showPagination ?
         React.createElement(
-            React.View,
-            { style: [styles.paginationWrap, state.paginationWrapStyle] },
+            'View', 
+            {style: [styles.paginationWrap, state.paginationWrapStyle]},
             this._createPagination()
-        ) : null;
+        ) : null;*/
+    let paginationView = state.showPagination ? <View style={[styles.paginationWrap, state.paginationWrapStyle]}>{this._createPagination() }</View> : null;
     //slide
     let tempTimer;
     let scrollView = Platform.OS === 'ios' ?

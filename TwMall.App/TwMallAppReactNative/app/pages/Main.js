@@ -60,7 +60,7 @@ class Main extends React.Component {
             </View>
             <ScrollView style={styles.container}>
                 <Slide
-                    height={380}
+                    height={150}
                     autoPlay={5000}
                     showPagination={true}
                     paginationStyle={{
@@ -72,10 +72,12 @@ class Main extends React.Component {
                     activePaginationStyle={{
                         backgroundColor: ColorMap.white
                     }}>
-                    <View><Image style={styles.viewpager} source={require('../public/images/splash/1.png') } /></View>
-                    <View><Image style={styles.viewpager} source={require('../public/images/splash/2.png') } /></View>
-                    <View><Image style={styles.viewpager} source={require('../public/images/splash/3.png') } /></View>
+                    <View><Image style={styles.viewpager} source={require('../public/images/carouselBox61.jpg') } /></View>
+                    <View><Image style={styles.viewpager} source={require('../public/images/carouselBox62.jpg') } /></View>
+                    <View><Image style={styles.viewpager} source={require('../public/images/carouselBox63.jpg') } /></View>
+
                 </Slide>
+
             </ScrollView>
 
         </View>
@@ -123,7 +125,7 @@ const styles = StyleSheet.create({
         color: ColorMap.white
     },
     viewpager: {
-        height: 380,
+        height: 150,
         backgroundColor: ColorMap.black,
         resizeMode: 'cover'
     },
